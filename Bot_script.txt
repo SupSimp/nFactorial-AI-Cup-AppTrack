@@ -1,0 +1,15 @@
+import telebot
+bot = telebot.TeleBot(6183059196:AAHrAIjR_qZJ_foJk6QOI7rhrqaYqdOLPJ0)
+
+# Определение команды /start
+@bot.message_handler(commands=['start'])
+def send_welcome(message):
+    bot.reply_to(message, "Привет! Я бот, который может отправлять сообщения в ответ на ваши запросы.")
+
+# Определение обработчика сообщений
+@bot.message_handler(func=lambda message: True)
+def echo_all(message):
+    bot.reply_to(message, message.text)
+
+# Запуск бота
+bot.polling()
