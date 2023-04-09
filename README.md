@@ -1,9 +1,9 @@
 # nFactorial-AI-Cup-AppTrack
 
-## < Your Name >
+## < Dmitriy Falkov >
 
 
-## < Your App's Name >
+## < EmoBot >
 
 
 ## Typeform to submit:
